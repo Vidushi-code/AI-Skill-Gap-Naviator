@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Reference - AI Skill Gap Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .demo-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .demo-section {
+            margin-bottom: 3rem;
+        }
+        .color-swatch {
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            border-radius: 8px;
+            margin: 0.5rem;
+            vertical-align: middle;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .color-label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container demo-container">
+        <h1>Visual Design Reference</h1>
+        <p>This page shows the color scheme and component styles used in the results page.</p>
+
+        <!-- Color Scheme -->
+        <div class="demo-section">
+            <h2>Color Scheme</h2>
+            
+            <h3>Skill Match Colors</h3>
+            <div>
+                <span class="color-swatch" style="background: #48bb78;"></span>
+                <span class="color-label">Green - Existing Skills / High Match (75%+)</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background: #ed8936;"></span>
+                <span class="color-label">Orange - Medium Match (50-74%)</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background: #f56565;"></span>
+                <span class="color-label">Red - Missing Skills / Low Match (<50%)</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background: #4299e1;"></span>
+                <span class="color-label">Blue - Required Skills</span>
+            </div>
+        </div>
+
+        <!-- Progress Bar Examples -->
+        <div class="demo-section">
+            <h2>Progress Bar Examples</h2>
+            
+            <h3>High Match (85%)</h3>
+            <div class="progress-bar" style="max-width: 400px;">
+                <div class="progress-fill high-match" style="width: 85%;"></div>
+            </div>
+            
+            <h3>Medium Match (60%)</h3>
+            <div class="progress-bar" style="max-width: 400px;">
+                <div class="progress-fill medium-match" style="width: 60%;"></div>
+            </div>
+            
+            <h3>Low Match (35%)</h3>
+            <div class="progress-bar" style="max-width: 400px;">
+                <div class="progress-fill low-match" style="width: 35%;"></div>
+            </div>
+        </div>
+
+        <!-- Skill Tags -->
+        <div class="demo-section">
+            <h2>Skill Tags</h2>
+            
+            <h3>Required Skills (Blue)</h3>
+            <div class="skill-tags">
+                <span class="skill-tag required">Python</span>
+                <span class="skill-tag required">SQL</span>
+                <span class="skill-tag required">Statistics</span>
+                <span class="skill-tag required">Machine Learning</span>
+            </div>
+            
+            <h3>Existing Skills (Green)</h3>
+            <div class="skill-tags">
+                <span class="skill-tag existing">Python</span>
+                <span class="skill-tag existing">Machine Learning</span>
+            </div>
+            
+            <h3>Missing Skills (Red)</h3>
+            <div class="skill-tags">
+                <span class="skill-tag missing">SQL</span>
+                <span class="skill-tag missing">Statistics</span>
+            </div>
+        </div>
+
+        <!-- Improvement Items -->
+        <div class="demo-section">
+            <h2>Action Items</h2>
+            <ul class="improvements-list">
+                <li><span class="check-icon">✓</span> Add a project using SQL for data analysis</li>
+                <li><span class="check-icon">✓</span> Include one statistics based ML project</li>
+                <li><span class="check-icon">✓</span> Show measurable impact in your projects</li>
+            </ul>
+        </div>
+
+        <!-- Skill Boxes -->
+        <div class="demo-section">
+            <h2>Skill Comparison Boxes</h2>
+            <div class="skills-grid">
+                <div class="skill-box required-box">
+                    <h4>Required Skills</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag required">Python</span>
+                        <span class="skill-tag required">SQL</span>
+                        <span class="skill-tag required">Statistics</span>
+                    </div>
+                </div>
+                
+                <div class="skill-box existing-box">
+                    <h4>✅ You Have</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag existing">Python</span>
+                    </div>
+                </div>
+                
+                <div class="skill-box missing-box">
+                    <h4>❌ Missing Skills</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag missing">SQL</span>
+                        <span class="skill-tag missing">Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

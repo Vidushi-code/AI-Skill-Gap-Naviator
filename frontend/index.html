@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Skill Gap Navigator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="brand-title">AI Skill Gap Navigator</h1>
+        <p class="brand-subtitle">Discover your path to career success</p>
+      </header>
+
+      <main class="main-content">
+        <div class="card">
+          <div class="card-header">
+            <h2>Analyze Your Profile</h2>
+            <p>Upload your resume and let AI guide your career growth</p>
+          </div>
+
+          <form id="analysisForm" class="form">
+            <div class="form-group">
+              <label for="resumeUpload" class="form-label">Resume</label>
+              <div class="file-input-wrapper">
+                <input
+                  type="file"
+                  id="resumeUpload"
+                  name="resume"
+                  accept=".pdf,.doc,.docx"
+                  class="file-input"
+                  required
+                />
+                <label for="resumeUpload" class="file-input-label">
+                  <span class="file-icon">📄</span>
+                  <span class="file-text" id="fileText"
+                    >Choose your resume</span
+                  >
+                </label>
+              </div>
+              <small class="form-hint">Supported formats: PDF, DOC, DOCX</small>
+            </div>
+
+            <div class="form-group">
+              <label for="githubUsername" class="form-label"
+                >GitHub Username</label
+              >
+              <input
+                type="text"
+                id="githubUsername"
+                name="github"
+                placeholder="Enter your GitHub username"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="jobDescription" class="form-label"
+                >Job Description</label
+              >
+              <textarea
+                id="jobDescription"
+                name="jobDescription"
+                placeholder="Paste job description from LinkedIn, Internshala, Indeed or company website...
+                            
+Example:
+We are looking for a Software Engineer with 2+ years of experience in Python, JavaScript, and cloud technologies. The ideal candidate should have:
+- Strong experience with React and Node.js
+- Knowledge of AWS or Azure
+- Experience with Docker and Kubernetes
+- Strong problem-solving skills"
+                class="form-textarea"
+                rows="8"
+                required
+              ></textarea>
+              <small class="form-hint"
+                >Copy and paste the full job description from LinkedIn, Internshala, Indeed, or any job portal</small
+              >
+            </div>
+
+            <button type="submit" class="btn-primary">
+              <span>Analyze Profile</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2026 AI Skill Gap Navigator. Built for excellence.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

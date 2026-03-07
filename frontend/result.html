@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - AI Skill Gap Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="brand-title">AI Skill Gap Navigator</h1>
+            <p class="brand-subtitle">Your personalized career roadmap</p>
+        </header>
+
+        <main class="main-content">
+            <div class="results-header">
+                <h2>Analysis Complete</h2>
+                <a href="index.html" class="btn-secondary">← New Analysis</a>
+            </div>
+
+            <!-- Skill Match Visualization -->
+            <section class="result-section match-section">
+                <div class="section-header">
+                    <h3>🎯 Skill Match</h3>
+                </div>
+                <div class="match-content">
+                    <div class="match-percentage" id="matchPercentage">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <p class="match-label">Match Score</p>
+                </div>
+            </section>
+
+            <!-- Skill Comparison Grid -->
+            <section class="result-section skills-comparison">
+                <div class="section-header">
+                    <h3>📋 Skill Analysis</h3>
+                </div>
+                <div class="skills-grid">
+                    <!-- Required Skills Box -->
+                    <div class="skill-box required-box">
+                        <h4>Required Skills</h4>
+                        <div id="requiredSkills" class="skill-tags"></div>
+                    </div>
+                    
+                    <!-- Existing Skills Box -->
+                    <div class="skill-box existing-box">
+                        <h4>✅ You Have</h4>
+                        <div id="existingSkills" class="skill-tags"></div>
+                    </div>
+                    
+                    <!-- Missing Skills Box -->
+                    <div class="skill-box missing-box">
+                        <h4>❌ Missing Skills</h4>
+                        <div id="missingSkills" class="skill-tags"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skill Gap Summary Section -->
+            <section class="result-section">
+                <div class="section-header">
+                    <h3>💡 What This Means</h3>
+                </div>
+                <div class="section-content">
+                    <p id="skillGapSummary" class="summary-text"></p>
+                </div>
+            </section>
+
+            <!-- Resume Improvements Section -->
+            <section class="result-section">
+                <div class="section-header">
+                    <h3>✨ Next Steps</h3>
+                </div>
+                <div class="section-content">
+                    <ul id="resumeImprovements" class="improvements-list"></ul>
+                </div>
+            </section>
+
+            <!-- 30-Day Roadmap Section -->
+            <section class="result-section">
+                <div class="section-header">
+                    <h3>🗓️ 4-Week Learning Plan</h3>
+                </div>
+                <div class="roadmap-grid" id="roadmapGrid">
+                    <!-- Roadmap cards will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <div class="action-footer">
+                <a href="index.html" class="btn-primary">Analyze Another Profile</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 AI Skill Gap Navigator. Built for excellence.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
