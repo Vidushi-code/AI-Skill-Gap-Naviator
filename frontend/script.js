@@ -225,3 +225,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+function handlePerfectMatchRoadmap(matchScore) {
+    if (parseInt(matchScore) === 100) {
+        const roadmap = {
+            week1: "Review core concepts related to the target role and revisit previous projects to improve code quality.",
+            week2: "Optimize GitHub repositories by improving documentation, README files, and project descriptions.",
+            week3: "Refine your resume and highlight role-relevant projects with measurable achievements.",
+            week4: "Prepare for technical interviews by revising key concepts and practicing project explanations."
+        };
+
+        return roadmap;
+    }
+
+    return null; // return null if match is not 100
+}
+
+const matchScore = 100;
+
+const roadmap = handlePerfectMatchRoadmap(matchScore);
+
+if (roadmap) {
+    document.getElementById("week1").innerText = roadmap.week1;
+    document.getElementById("week2").innerText = roadmap.week2;
+    document.getElementById("week3").innerText = roadmap.week3;
+    document.getElementById("week4").innerText = roadmap.week4;
+}
