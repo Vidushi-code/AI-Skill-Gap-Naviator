@@ -247,8 +247,17 @@ const matchScore = 100;
 const roadmap = handlePerfectMatchRoadmap(matchScore);
 
 if (roadmap) {
-    document.getElementById("week1").innerText = roadmap.week1;
-    document.getElementById("week2").innerText = roadmap.week2;
-    document.getElementById("week3").innerText = roadmap.week3;
-    document.getElementById("week4").innerText = roadmap.week4;
+
+    const week1 = document.getElementById("week1");
+    const week2 = document.getElementById("week2");
+    const week3 = document.getElementById("week3");
+    const week4 = document.getElementById("week4");
+
+    if (week1) week1.innerText = roadmap.week1;
+    if (week2) week2.innerText = roadmap.week2;
+    if (week3) week3.innerText = roadmap.week3;
+    if (week4) week4.innerText = roadmap.week4;
+}
+if (!response.ok) {
+    throw new Error("API request failed");
 }
