@@ -31,7 +31,7 @@ app = FastAPI(
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://ai-skill-gap-navigator.s3-website.eu-north-1.amazonaws.com "
+    "http://ai-skill-gap-navigator.s3-website.eu-north-1.amazonaws.com"
 ]
 
 app.add_middleware(
