@@ -28,9 +28,15 @@ app = FastAPI(
 )
 
 # Add CORS middleware
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = [
+    "http://ai-skill-gap-navigator.s3-website.eu-north-1.amazonaws.com"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
