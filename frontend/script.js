@@ -55,7 +55,7 @@ if (document.getElementById('analysisForm')) {
             formData.append("github_username", github);
             formData.append("job_description", jobDescription);
 
-            const response = await fetch("http://localhost:8000/analyze", {
+            const response = await fetch("https://ai-skill-gap-naviator.onrender.com/analyze", {
                 method: "POST",
                 body: formData
             });
