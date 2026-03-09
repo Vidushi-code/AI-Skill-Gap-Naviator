@@ -2,6 +2,9 @@
 
 🚀 Built for **AWS AI for Bharat Hackathon**
 
+## 🌐 Live Demo
+**🔗 [Try it now!](http://ai-skill-gap-navigator.s3-website.eu-north-1.amazonaws.com)**
+
 An intelligent web-based platform that leverages AI to analyze resumes, GitHub profiles, and job descriptions to identify skill gaps and generate personalized learning roadmaps for career advancement.
 
 ---
